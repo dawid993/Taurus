@@ -1,0 +1,30 @@
+{
+    "packageDirectories": [
+        {
+            "path": "shared-core",            
+            "package": "Shared Core",
+            "versionName": "ver 0.1",            
+            "versionNumber": "0.1.0.NEXT"
+        },
+        {
+            "path": "portal",
+            "package": "Customers Portal",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT",
+            "default": true,
+            "dependencies": [
+                {
+                    "package": "Shared Core"
+                }
+            ]
+        }
+    ],
+    "name": "Taurus",
+    "namespace": "",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "51.0",
+    "packageAliases": {
+        "Shared Core": "0Ho69000000blRwCAI",
+        "Customers Portal": "0Ho69000000blS1CAI"
+    }
+}

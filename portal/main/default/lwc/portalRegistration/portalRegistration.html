@@ -1,0 +1,33 @@
+<template>
+    <div class="registration-form">
+        <div class="registration-fields">
+            <lightning-input type="text" onclick={onFieldChange} label={registrationLabels.registrationFirstName}>
+            </lightning-input>
+            <lightning-input type="text" onclick={onFieldChange} label={registrationLabels.registrationLastName}>
+            </lightning-input>
+            <lightning-input type="text" onclick={onFieldChange} label={registrationLabels.registrationMiddleName}>
+            </lightning-input>
+            <lightning-input type="date" onclick={onFiledChange} label={registrationLabels.registrationBirthDay}>
+            </lightning-input>
+            <lightning-input type="email" onclick={onFiledChange} label={registrationLabels.registrationEmail}>
+            </lightning-input>
+            <lightning-input type="text" onclick={onFiledChange} label={registrationLabels.registrationPhone}>
+            </lightning-input>
+        </div>
+        <div class="irn-section">
+            <h2>{registrationLabels.registrationIrnQuestion}</h2>
+            <h3>{registrationLabels.registrationIrnMessage}</h3>
+            <c-single-answer-checkboxes-question answers={irnAnswers} onanswerselected={onAnswerSelected}>
+            </c-single-answer-checkboxes-question>
+            <template if:true={showIrnInput}>
+                <lightning-input type='text' label={registrationLabels.registrationIrnNumber}></lightning-input>
+            </template>
+        </div>
+        <div class="tc-section">
+            <h2>{registrationLabels.registrationTc}</h2>   
+            <h2>{registrationLabels.registrationTcMessage}</h2>  
+            <a href={registrationLabels.registrationTcLink}>{registrationLabels.registrationTc}</a>
+            <lightning-input type="checkbox" label={registrationLabels.registrationTcAgreement}></lightning-input>
+        </div>
+    </div>
+</template>

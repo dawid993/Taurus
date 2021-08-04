@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>BirthDay</fullName>
+        <categories>Portal Registration</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>BirthDay</shortDescription>
+        <value>Date of birth</value>
+    </labels>
+    <labels>
+        <fullName>DoYouHaveIrnQuestion</fullName>
+        <categories>Portal Registration</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Do you have irn question</shortDescription>
+        <value>Do you have IRN?</value>
+    </labels>
+    <labels>
+        <fullName>Email</fullName>
+        <categories>Portal Registration</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Email</shortDescription>
+        <value>Email</value>
+    </labels>
+    <labels>
+        <fullName>FirstName</fullName>
+        <categories>Portal Registration</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>First Name</shortDescription>
+        <value>First name</value>
+    </labels>
+    <labels>
+        <fullName>IrnMessage</fullName>
+        <categories>Portal Registration</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Irn message</shortDescription>
+        <value>If you have IRN number we can validate your account quickly. In such case please click yes and provide number.</value>
+    </labels>
+    <labels>
+        <fullName>IrnQuestionNoAnswer</fullName>
+        <categories>Portal Registration</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Irn question no answer</shortDescription>
+        <value>No, I don&apos;t have</value>
+    </labels>
+    <labels>
+        <fullName>IrnQuestionYesAnswer</fullName>
+        <categories>Portal Registration</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Irn question yes answer</shortDescription>
+        <value>Yes, I have my IRN</value>
+    </labels>
+    <labels>
+        <fullName>LastName</fullName>
+        <categories>Portal Registration</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Last name</shortDescription>
+        <value>Last name</value>
+    </labels>
+    <labels>
+        <fullName>MiddleName</fullName>
+        <categories>Portal Registration</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Middle name</shortDescription>
+        <value>Middle name</value>
+    </labels>
+    <labels>
+        <fullName>Phone</fullName>
+        <categories>Portal Registration</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Phone</shortDescription>
+        <value>Phone</value>
+    </labels>
+    <labels>
+        <fullName>TermsAndCondition</fullName>
+        <categories>Portal Registration</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Terms and Condition</shortDescription>
+        <value>Terms and Condition</value>
+    </labels>
+    <labels>
+        <fullName>TermsAndConditionAgreement</fullName>
+        <categories>Portal Registration</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Terms and Condition agreement</shortDescription>
+        <value>I have read Terms and Conditions and I agree policies and rules presented in that document.</value>
+    </labels>
+    <labels>
+        <fullName>TermsAndConditionLink</fullName>
+        <categories>Portal Registration</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Terms and Condition link</shortDescription>
+        <value>https://www.google.pl</value>
+    </labels>
+    <labels>
+        <fullName>TermsAndConditionMessage</fullName>
+        <categories>Portal Registration</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Terms and Condition message</shortDescription>
+        <value>Before we create your account you need to read and agree terms and condition of our services. Please click link below to find T&amp;C.</value>
+    </labels>
+    <labels>
+        <fullName>YourIrnNumber</fullName>
+        <categories>Portal Registration</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Your Irn number</shortDescription>
+        <value>Your IRN number</value>
+    </labels>
+</CustomLabels>
