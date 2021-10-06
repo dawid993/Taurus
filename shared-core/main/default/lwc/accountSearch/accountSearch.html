@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Account Search">
+        <lightning-datatable
+                key-field="id"
+                data={data}
+                onsort={onsort}
+                columns={columns}
+                sorted-by={sortedBy}
+                default-sort-direction={defaultSortDirection}
+                sorted-direction={sortDirection}></lightning-datatable>
+    </lightning-card>
+</template>

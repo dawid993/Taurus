@@ -1,0 +1,11 @@
+<template>
+    <div class="error-modal">
+        <div class="error-modal-content">
+            <div class="title-panel">
+                <span>{errorTitle}</span>
+                <span class="close-icon" onclick={emitCloseEvent}>&times;</span>
+            </div>
+            <div>{errorMessage}</div>
+        </div>
+    </div>
+</template>

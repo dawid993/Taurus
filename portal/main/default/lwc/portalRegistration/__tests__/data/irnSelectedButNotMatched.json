@@ -1,0 +1,8 @@
+{
+    "isSuccess" : true,
+    "isFormValid" : true,
+    "isIrnSelected" : true,
+    "isIrnFilledByUser" : true,
+    "isIrnValid" : true,
+    "isIrnMatchedWithEmailOrPhone" : false
+}

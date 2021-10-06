@@ -1,9 +1,9 @@
 {
     "packageDirectories": [
         {
-            "path": "shared-core",            
+            "path": "shared-core",
             "package": "Shared Core",
-            "versionName": "ver 0.1",            
+            "versionName": "ver 0.1",
             "versionNumber": "0.1.0.NEXT"
         },
         {
@@ -17,6 +17,27 @@
                     "package": "Shared Core"
                 }
             ]
+        },
+        {
+            "path": "accesses",
+            "package": "Accesses",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT",
+            "dependencies": [
+                {
+                    "package": "Shared Core"
+                },
+                {
+                    "package": "Customers Portal"
+                }
+            ]
+        },
+        {
+            "path": "accesses",
+            "package": "YourPackageName",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT",
+            "default": false
         }
     ],
     "name": "Taurus",
@@ -25,6 +46,7 @@
     "sourceApiVersion": "51.0",
     "packageAliases": {
         "Shared Core": "0Ho69000000blRwCAI",
-        "Customers Portal": "0Ho69000000blS1CAI"
+        "Customers Portal": "0Ho69000000blS1CAI",
+        "Accesses": "0Ho69000000blSkCAI"
     }
 }

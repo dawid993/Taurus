@@ -25,6 +25,14 @@
         <value>Email</value>
     </labels>
     <labels>
+        <fullName>EmptyIrn</fullName>
+        <categories>Portal Registration</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>EmptyIrn</shortDescription>
+        <value>You need to pass your IRN number or you can avoid adding any, then we will try to verify you a different way.</value>
+    </labels>
+    <labels>
         <fullName>FirstName</fullName>
         <categories>Portal Registration</categories>
         <language>en_US</language>
@@ -73,12 +81,60 @@
         <value>Middle name</value>
     </labels>
     <labels>
+        <fullName>PasswordConfirmation</fullName>
+        <categories>Portal Registration</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Password Confirmation</shortDescription>
+        <value>Confirm your password</value>
+    </labels>
+    <labels>
+        <fullName>PasswordDoesNotMatch</fullName>
+        <categories>Portal Registration</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PasswordDoesNotMatch</shortDescription>
+        <value>Password doesn&apos;t match</value>
+    </labels>
+    <labels>
+        <fullName>PasswordInput</fullName>
+        <categories>Portal Registration</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Password Input</shortDescription>
+        <value>Password</value>
+    </labels>
+    <labels>
+        <fullName>PasswordIsInvalid</fullName>
+        <categories>Portal Registration</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Password Input</shortDescription>
+        <value>Password doesn't meet complexity requirments. Please set valid password.</value>
+    </labels>
+    <labels>
         <fullName>Phone</fullName>
         <categories>Portal Registration</categories>
         <language>en_US</language>
         <protected>true</protected>
         <shortDescription>Phone</shortDescription>
         <value>Phone</value>
+    </labels>
+    <labels>
+        <fullName>RegistrationPassword</fullName>
+        <categories>Portal Registration</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Registration Password</shortDescription>
+        <value>Password</value>
+    </labels>
+    <labels>
+        <fullName>RegistrationPasswordInfo</fullName>
+        <categories>Portal Registration</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Registration Password Info</shortDescription>
+        <value>Please set your password.</value>
     </labels>
     <labels>
         <fullName>TermsAndCondition</fullName>

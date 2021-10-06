@@ -1,0 +1,7 @@
+<template>
+    <c-portal-registration onerroroccure={showErrorScreen}></c-portal-registration>
+    <template if:true={showErrorPanel}>
+        <c-error-screen error-title="Something went wrong." error-message="Something went wrong"
+            oncloseerrorscreen={closeErrorScreen}></c-error-screen>
+    </template>
+</template>

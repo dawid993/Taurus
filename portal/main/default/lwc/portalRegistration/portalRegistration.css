@@ -1,12 +1,4 @@
-.registration-form {
-    min-width: 700px;
-    min-height: 400px;
-}
+@import 'c/portalStyles';
 
-.registration-form .registration-fields {
-    width : 50%;
-}
 
-.registration-form .irn-section {
-    width : 50%;
-}
+

@@ -2,9 +2,9 @@
     <div>
         <h2>{question}</h2>
         <template for:each={answers} for:item="answer">
-            <div key={answer.id}>
+            <div class="answer-section" key={answer.id}>
                 <input id={answer.id} data-id={answer.id} type="checkbox" onclick={onAnswerClick} checked={answer.isSelected} />
-                <label for={answer.id}>{answer.content}</label>
+                <label style="margin-left: 4px;" for={answer.id}>{answer.content}</label>
             </div>
         </template>
     </div>

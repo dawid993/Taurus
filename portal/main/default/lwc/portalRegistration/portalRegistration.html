@@ -1,33 +1,63 @@
 <template>
-    <div class="registration-form">
-        <div class="registration-fields">
-            <lightning-input type="text" onclick={onFieldChange} label={registrationLabels.registrationFirstName}>
+    <div class="form-container" onchange={onAnyFieldChange}>
+        <h1 class="form-header header-margin">Registration</h1>
+        <div class="form-section">
+            <h2 class="form-subheader header-margin">Personal data</h2>
+            <h3 class="form-sub-subheader header-margin">Please fill your personal data</h3>
+            <lightning-input data-id="firstName" type="text" label={registrationLabels.registrationFirstName}
+                min-length="2" max-length="50" required>
             </lightning-input>
-            <lightning-input type="text" onclick={onFieldChange} label={registrationLabels.registrationLastName}>
+            <lightning-input data-id="middleName" type="text" label={registrationLabels.registrationMiddleName}
+                min-length="2" max-length="50">
             </lightning-input>
-            <lightning-input type="text" onclick={onFieldChange} label={registrationLabels.registrationMiddleName}>
+            <lightning-input data-id="lastName" type="text" label={registrationLabels.registrationLastName}
+                min-length="2" max-length="50" required>
             </lightning-input>
-            <lightning-input type="date" onclick={onFiledChange} label={registrationLabels.registrationBirthDay}>
+            <lightning-input data-id="birthday" type="date" label={registrationLabels.registrationBirthDay} required
+                max={maxDate} date-style="short">
             </lightning-input>
-            <lightning-input type="email" onclick={onFiledChange} label={registrationLabels.registrationEmail}>
+            <lightning-input data-id="email" type="email" label={registrationLabels.registrationEmail} required>
             </lightning-input>
-            <lightning-input type="text" onclick={onFiledChange} label={registrationLabels.registrationPhone}>
+            <lightning-input data-id="phone" type="text" label={registrationLabels.registrationPhone}>
             </lightning-input>
         </div>
-        <div class="irn-section">
-            <h2>{registrationLabels.registrationIrnQuestion}</h2>
-            <h3>{registrationLabels.registrationIrnMessage}</h3>
+        <div class="irn-section form-section">
+            <h2 class="form-subheader header-margin">{registrationLabels.registrationIrnQuestion}</h2>
+            <h3 class="form-sub-subheader header-margin">{registrationLabels.registrationIrnMessage}</h3>
             <c-single-answer-checkboxes-question answers={irnAnswers} onanswerselected={onAnswerSelected}>
             </c-single-answer-checkboxes-question>
             <template if:true={showIrnInput}>
-                <lightning-input type='text' label={registrationLabels.registrationIrnNumber}></lightning-input>
+                <lightning-input data-id='irnInput' type='text' label={registrationLabels.registrationIrnNumber}
+                    pattern="\d{9}" max-length="9" required>
+                </lightning-input>
             </template>
         </div>
-        <div class="tc-section">
-            <h2>{registrationLabels.registrationTc}</h2>   
-            <h2>{registrationLabels.registrationTcMessage}</h2>  
-            <a href={registrationLabels.registrationTcLink}>{registrationLabels.registrationTc}</a>
-            <lightning-input type="checkbox" label={registrationLabels.registrationTcAgreement}></lightning-input>
+        <div class="password-section form-section">
+            <h2 class="form-subheader header-margin">{registrationLabels.passwordHeader}</h2>
+            <h3 class="form-sub-subheader header-margin">{registrationLabels.passwordInfo}</h3>
+            <lightning-input data-id="password" type="password" label={registrationLabels.password} required
+                min-length="8" message-when-bad-input={registrationLabels.invalidPassword}
+                message-when-too-short={registrationLabels.invalidPassword}>
+            </lightning-input>
+            <lightning-input data-id="password-confirmation" type="password" onblur={onPasswordConfirmationBlur}
+                onchange={onPasswordConfirmationChange} label={registrationLabels.passwordConfirmation} required
+                min-length="8">
+            </lightning-input>
+        </div>
+        <div class="tc-section form-section">
+            <h2 class="form-subheader header-margin">{registrationLabels.registrationTc}</h2>
+            <h3 class="form-sub-subheader header-margin">{registrationLabels.registrationTcMessage}</h3>
+            <a href={registrationLabels.registrationTcLink} target="_blank">{registrationLabels.registrationTc}</a>
+            <lightning-input data-id="tc-checbox" type="checkbox" required
+                label={registrationLabels.registrationTcAgreement}></lightning-input>
+        </div>        
+        <div class='button-section'>
+            <template if:false={isFormValid}>
+                <lightning-button label="Register" disabled></lightning-button>
+            </template>
+            <template if:true={isFormValid}>
+                <lightning-button label="Register" onclick={register}></lightning-button>
+            </template>
         </div>
     </div>
 </template>

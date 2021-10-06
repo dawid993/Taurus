@@ -1,0 +1,7 @@
+{
+    "isSuccess" : true,
+    "isFormValid" : true,
+    "isIrnSelected" : true,
+    "isIrnFilledByUser" : true,
+    "isIrnValid" : false
+}
